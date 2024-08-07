@@ -1,0 +1,149 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mein{
+   overflow-x: hidden;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background-size: cover;
+   background-position: center;
+   background: rgb(200,12,12);
+background: linear-gradient(90deg, rgba(200,12,12,1) 0%, rgba(88,3,246,1) 100%);
+backdrop-filter: blur(100px);
+   
+}
+.Todo-list h1{
+   text-align: center;
+   margin-top: 0px;
+   font-size: 50px;
+}
+.Todo-list{
+   background: linear-gradient(90deg, rgba(200,12,12,1) 0%, rgba(88,3,246,1) 100%);
+   padding: 25px 50px;
+   color: #fff;
+   border-radius: 10px;
+   justify-content: center;
+}
+.input{
+   display: flex;
+   justify-content: center;
+}
+.input input::placeholder{
+   margin-left: 10px;
+}
+.input input{
+   background-color: transparent;
+   color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   width: 350px;
+   height: 6vh;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+.input button{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   /* border: 1px solid #000; */
+   border-radius: 10px;
+   padding: 10px 20px;
+   font-size: 15px;
+   /* background-color: red; */
+   color: #fff;
+   border: none;
+   background-color: transparent;
+   /* margin-left: 10px; */
+}
+#btn1{
+   color: #000;
+   font-size: 16px;
+}
+#btn2{
+   color: #000;
+   font-size: 16px;
+}
+.btn button{
+   padding: 10px ;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+}
+.result span{
+   font-size: 15px;
+   color: #000;
+}
+.result .btn {
+   position: relative;
+}
+.result ol li{
+   list-style: none;
+   font-size: 25px;
+   margin-top: 10px;
+   /* display: flex ; */
+   flex-wrap: wrap;
+}
+#ul{
+   width: 100%;
+   flex-wrap: wrap;
+   overflow-y: auto;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   padding: 10px;
+   height: 20vh;
+}
+.result{
+   /* scroll-margin: 20px ; */
+   flex-wrap: wrap;
+   display: flex;
+   /* height: 30vh; */
+   width: 400PX ;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   /* overflow-y: scroll; */
+   /* padding: 10px; */
+   /* margin: 10px;
+   padding-right: 30px; */
+   /* display: flex; */
+   /* margin-left: 100px; */
+}
+@media only screen and (max-width:550px){
+   .Todo-list{
+      flex-wrap: wrap;
+      width: auto;
+   }
+   .result  {
+      width: 300px;
+      flex-wrap: wrap;
+   }
+}
+@media only screen and (max-width:480px){
+   .Todo-list{
+      width: 60%;
+   }
+}
+@media only screen and (max-width:400px){
+   .input input{
+      width: 200px;
+   }
+   .result{
+      width: 250px;
+   }
+}
+
+::-webkit-scrollbar{
+   width: 0px;
+}
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+   background-color: transparent;
+}
