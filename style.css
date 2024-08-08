@@ -25,6 +25,7 @@ backdrop-filter: blur(100px);
    font-size: 50px;
 }
 .Todo-list{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    background: linear-gradient(90deg, rgba(200,12,12,1) 0%, rgba(88,3,246,1) 100%);
    padding: 25px 50px;
    color: #fff;
